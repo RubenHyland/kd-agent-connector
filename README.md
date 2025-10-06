@@ -49,6 +49,14 @@ app.knowledge-discovery.api-url = https://api.ai.dev.experience.hyland.com
 app.knowledge-discovery.hx-env-id = <environment‑uuid>
 ```
 
+Additionally, add the following to `alfresco-global.properties`:
+
+```properties
+hxi.knowledge-retrieval.url=https://<environment-id>.ai.experience.hyland.com/discovery/agents
+```
+
+Replace `<environment-id>` with your Hyland Experience environment ID.
+
 > **Keep secrets out of VCS** – externalise them via Docker secrets, Kubernetes config‑maps or your preferred secret store.
 
 ## REST End‑points
